@@ -1,0 +1,106 @@
+body {
+	background-color: black; 
+	color: grey; 
+	font-family: sans-serif;
+}
+
+div {
+	/*border: 1px solid red;*/
+}
+
+h3 {
+	color: white;
+	font-weight: normal;
+}
+
+h4 {
+	font-weight: normal;
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+li.feedlist a, li.feedlist a:visited {
+	color: grey;
+	text-decoration: none
+}
+
+.comic-container {
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.comic {
+	width: 40rem;
+	max-height: 45rem;
+	margin: 0 3rem;
+	text-align: center;
+}
+
+.comic img {
+	max-width: 40rem;
+	max-height: 40rem;
+}
+
+.comic img, .thumbnail img {
+  display: inline;
+  visibility: visible;
+} 
+
+.comic p, .thumbnail p {
+	display: inline;
+	visibility: hidden;
+}
+
+.comic a, .thumbnail a {
+	display: none;
+}
+
+.thumbnail-list {
+	display: flex;
+	justify-content: center;
+}
+
+.thumbnail {	
+	display: inline-block;
+	padding: 0 .25rem;
+}
+
+.thumbnail img {
+	max-width: 5rem;
+	max-height:5rem;
+	opacity: .45;
+	cursor: pointer;
+}
+
+.thumbnail img:hover {
+	opacity: 1;
+}
+
+.active img {
+	opacity: 1;
+}
+
+.directional-button {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#left {
+	border-width: 25px 50px 25px 0;
+	border-color: transparent grey transparent transparent;	
+}
+
+#right {
+	border-width: 25px 0 25px 50px;
+	border-color: transparent transparent transparent grey;
+}
